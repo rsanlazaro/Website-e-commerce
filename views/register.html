@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo"> 
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más <i class="fa fa-search" id="submit"></i></div>
+            </div>
+            <div class="message"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="/" method="GET">
+        <p>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+        </p>
+        <p>
+            <input type="text" name="usuario" id="nombre-usuario" placeholder="Nombre de usuario">
+        </p>
+        <p>
+            <label class="title">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha-nacimiento">
+        </p>
+        <p>
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">            
+        </p>
+        <p class="title-options">
+            <label class="title2">Perfil del usuario:</label>
+            <div class="options">
+                <p>
+                    <input type="radio" name="perfil" value="Comprador" id="Comprador">
+                    <label for="Comprador"> Comprador:</label>
+                </p>
+                <p>    
+                    <input type="radio" name="perfil" value="Vendedor">
+                    <label for="Vendedor"> Vendedor:</label>
+                </p>
+            </div>
+        </p>
+        <p class="title-options">
+            <label class="title2">Intereses</label>
+            <div class="options">
+                <p>
+                    <input type="checkbox" name="categorias" value="Electro">
+                    <label>Electro</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="categorias" value="Moda">
+                    <label>Moda</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="categorias" value="Hogar">
+                    <label>Hogar</label>
+                </p>
+                <p>    
+                    <input type="checkbox" name="categorias" value="Jugueteria">
+                    <label>Jugueteria</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="categorias" value="Vida sana">
+                    <label>Vida sana</label>
+                </p>
+            </div>
+        </p>
+        <p>
+            <label class="title">Foto de usuario</label>
+            <input type="file" name="foto" accept=".jpg">
+        </p>
+        <p>
+            <input type="password" name="password" value="" placeholder="Contraseña">
+        </p>
+        <p>
+            <input type="password" name="password" value="" placeholder="Confirmar contraseña">
+        </p>
+        <p>
+            <button type="submit">Enviar</button> 
+        </p>
+        <p>
+            <button type="reset">Borrar datos</button> 
+        </p>
+    </form>
+</body>
+</html>
