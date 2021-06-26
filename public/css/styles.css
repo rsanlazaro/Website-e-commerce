@@ -290,6 +290,9 @@ footer p{
 
     header div.logo{
         flex-grow: 1;
+    }
+
+    header .logo img{
         max-width: 100%;
         height: auto;
     }
