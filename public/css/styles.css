@@ -11,6 +11,7 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
+    font-size: 12px;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
 }
 
 h3{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 p{
@@ -45,11 +46,6 @@ header{
     background-color: #EAC926;
 }
 
-header div.logo,
-header .form{
-    width: 20%;
-}
-
 header div.logo{
     display: flex;
     align-items: center;
@@ -60,15 +56,21 @@ header .form{
     display: flex;
     flex-grow: 1;
     align-items: center;
-    justify-content: flex-end;
     padding: 2px;
     font-size: 11px;
 }
 header nav{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overflow{
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 header ul{
+    padding-top: 2%;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -96,15 +98,26 @@ header .form .input{
     padding: 2%;
     border-radius: 5px;
     margin-left: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-header .message{
+header .form .input div{
+    flex-grow: 1;
+}
+
+/*header .message{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
     padding: 5%;
     margin: auto;
+}*/
+
+header .message{
+    display: none;
 }
 
 header .form #submit{
@@ -136,17 +149,18 @@ div.offers{
 }
 
 .price{
-    font-size: 18px;
+    font-size: 14px;
     width: 30%;
 }
 
 .discount{
     width: 70%;
+    text-align: right;
 }
 
 .discount,
 .description{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -215,6 +229,7 @@ article div.main-article{
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
+    padding-top: 25px;
 }
 
 .footer-box{
@@ -239,12 +254,13 @@ footer i:hover{
 }
 
 footer h3{
-    font-size: medium;
+    font-size: 12px;
     padding-bottom: 2%;
 }
 
 footer p{
     margin-top: 0;
+    display: none;
 }
 
 .copyright{
@@ -273,20 +289,24 @@ footer p{
     }
 
     header div.logo{
-        flex-grow: 70;
+        flex-grow: 1;
     }
 
     header .form{
-        flex-grow: 100;
+        flex-grow: 1;
     }
 
-    header div.message{
+    /*header div.message{
         display: flex;
         align-items: center;
         margin: 0%;
         margin-left: 5%;
         padding: 0%;
         width: 30%;
+    }*/
+
+    header .message{
+        display: none;
     }
 
     header .top-header{
