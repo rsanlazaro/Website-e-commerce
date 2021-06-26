@@ -290,7 +290,8 @@ footer p{
 
     header div.logo{
         flex-grow: 1;
-        width: 20px;
+        max-width: 100%;
+        height: auto;
     }
 
     header .form{
