@@ -38,10 +38,10 @@
     </header>
     <form action="/" method="GET">
         <p>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+            <input pattern=".{4,}" title="Más de 4 caracteres" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required>
         </p>
         <p>
-            <input type="text" name="usuario" id="nombre-usuario" placeholder="Nombre de usuario">
+            <input pattern=".{4,}" title="Más de 4 caracteres" type="text" name="usuario" id="nombre-usuario" placeholder="Nombre de usuario" required>
         </p>
         <p>
             <label class="title">Fecha de nacimiento</label>
@@ -93,10 +93,10 @@
             <input type="file" name="foto" accept=".jpg">
         </p>
         <p>
-            <input type="password" name="password" value="" placeholder="Contraseña">
+            <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra en mayúscula, una letra en minúscula y más de 8 caracteres" type="password" name="password" value="" placeholder="Contraseña" required>
         </p>
         <p>
-            <input type="password" name="password" value="" placeholder="Confirmar contraseña">
+            <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra en mayúscula, una letra en minúscula y más de 8 caracteres" type="password" name="password" value="" placeholder="Confirmar contraseña" required>
         </p>
         <p>
             <button type="submit">Enviar</button> 

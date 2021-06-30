@@ -50,7 +50,7 @@ header div.logo{
     display: flex;
     align-items: center;
     padding: 10px;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 header .form{
     display: flex;
@@ -107,24 +107,40 @@ header .form .input div{
     flex-grow: 1;
 }
 
-/*header .message{
+form{
+    width: 100%;
+    position: relative;
+}
+
+header .message{
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
     padding: 5%;
     margin: auto;
-}*/
+}
 
-header .message{
+header nav{
     display: none;
 }
+
+/* header .message{
+    display: none;
+} */
 
 header .form #submit{
     background-color: #FFF;
     border: 1px solid white;
     color: #666;
     width: 15px;
+}
+
+form i{
+    position: absolute;
+    top: 30%;
+    left: 95%;
 }
 
 div.burger-menu{
@@ -260,10 +276,12 @@ footer h3{
 
 footer p{
     margin-top: 0;
+    font-size: 11px;
     display: none;
 }
 
 .copyright{
+    display: block;
     text-align: left;
     margin: 2%;
 }
@@ -288,9 +306,9 @@ footer p{
         font-size: 15px;
     }
 
-    header div.logo{
+    /* header div.logo{
         flex-grow: 1;
-    }
+    } */
 
     header div a{
         width: 100%;
@@ -371,6 +389,10 @@ footer p{
     form input,
     form button{
         font-size: 16px;
+    }
+
+    footer p{
+        display: block;
     }
 }
 
