@@ -117,7 +117,7 @@ header .message{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 9px;
     padding: 5%;
     margin: auto;
 }
@@ -290,7 +290,7 @@ footer p{
 @media (min-width: 361px){ 
     header .form .input,
     header .message{
-        font-size: 14px;
+        font-size: 10px;
     }
 
     header nav{    
@@ -331,10 +331,6 @@ footer p{
         padding: 0%;
         width: 30%;
     }*/
-
-    header .message{
-        display: none;
-    }
 
     header .top-header{
         display: flex;
@@ -400,7 +396,7 @@ footer p{
 @media (min-width: 769px){
     header .form .input,
     header .message{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     header nav{
@@ -413,6 +409,10 @@ footer p{
 
     p{
         font-size: 20px;
+    }
+
+    header .message{
+        width: min-content;
     }
 
     form input,
